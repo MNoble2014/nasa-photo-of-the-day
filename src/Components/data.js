@@ -19,4 +19,16 @@ export default class Data extends Component {
         };
         this.handleChange = this.handleChange.bind(this);
     }
+    handleChange(date) {
+        this.setState(
+            {
+                startDate: date,
+                begin: date
+            },
+            () => {}
+        );
+        setTimeout(
+            axios.get('')
+        )
+    }
 }
